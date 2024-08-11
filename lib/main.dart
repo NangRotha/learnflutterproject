@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           decoration: BoxDecoration(
               shape: BoxShape.circle,
               // borderRadius: BorderRadius.circular(10),
-              color: Color(0xff4361ee),
+              color: Color(0xff4361fe),
               boxShadow: [
                 BoxShadow(color: Colors.green, blurRadius: 6, spreadRadius: 4),
               ]),
