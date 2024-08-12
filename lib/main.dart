@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Simple Flutter App'),
+          title: const Text('Simple Flutter App hello'),
         ),
         body: Container(
           constraints: BoxConstraints(maxHeight: 600, maxWidth: 400),
