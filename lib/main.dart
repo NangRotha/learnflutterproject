@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
         title: const Text('Simple Flutter App hello'),
       ),
       body: Container(
-        height: 200,
-        color: Colors.amber,
-        child: Row(
+        width: double.infinity,
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
               width: 100,
