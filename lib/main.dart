@@ -12,28 +12,67 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
-        title: const Text('Simple Flutter App hello'),
+        backgroundColor: Colors.blue,
+        title: const Text(
+          'Simple Flutter App hello',
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
       ),
       body: Container(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        height: 300,
+        color: Color.fromARGB(255, 17, 112, 207),
+        child: const Column(
           children: [
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.red,
+            Padding(
+              padding: EdgeInsets.only(right: 210, top: 10),
+              child: Text(
+                'Student',
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+              ),
             ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.green,
+            Divider(
+              color: Colors.black,
             ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.blue,
+            Padding(
+                padding: EdgeInsets.only(left: 40, top: 10),
+                child: Row(
+                  children: [
+                    Text(
+                      'Identity Card',
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                    )
+                  ],
+                )),
+            Padding(
+              padding: EdgeInsets.only(left: 30),
+              child: Row(
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text('Studie at'),
+                      Text('INTERNATIONAL UNIVERSITY'),
+                      Text('Name'),
+                      Text('Jonh Doe'),
+                      Text('Born'),
+                      Text('08/04/2000'),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Text(
+                        'Image',
+                        style: TextStyle(
+                          fontSize: 50,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text('021 554 999 685 145'),
+                    ],
+                  )
+                ],
+              ),
             )
           ],
         ),
