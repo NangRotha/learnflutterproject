@@ -10,33 +10,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Simple Flutter App hello'),
-        ),
-        body: Container(
-          constraints: BoxConstraints(maxHeight: 600, maxWidth: 400),
-          // margin: EdgeInsets.only(left: 80, top: 50),
-          decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              // borderRadius: BorderRadius.circular(10),
-              color: Color(0xff4361fe),
-              boxShadow: [
-                BoxShadow(color: Colors.green, blurRadius: 6, spreadRadius: 4),
-              ]),
-          // width: 200,
-          // height: 200,
-          alignment: Alignment.center,
-          transform: Matrix4.rotationZ(0.0),
-          padding: EdgeInsets.all(10),
-          // color: Colors.pink,
-          child: Text(
-            'Flutter',
-            style: TextStyle(
-                color: Colors.white, fontSize: 30, fontWeight: FontWeight.bold),
-          ),
+        home: Scaffold(
+      appBar: AppBar(
+        title: const Text('Simple Flutter App hello'),
+      ),
+      body: Container(
+        height: 200,
+        color: Colors.amber,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.red,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.green,
+            ),
+            Container(
+              width: 100,
+              height: 100,
+              color: Colors.blue,
+            )
+          ],
         ),
       ),
-    );
+    ));
   }
 }
